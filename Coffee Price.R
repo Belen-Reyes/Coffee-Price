@@ -22,7 +22,7 @@ library(lmtest)
 library(astsa)
 
 # Data ----
-data <- read.csv('C:/Users/Belen/Documents/Belén/Séptimo semestre/Bayesiana/Proyecto Final/Coffee.csv', sep=';')
+data <- read.csv('Coffee.csv', sep=';')
 head(data)
 cafe <- data[,2]
 cafe <- ts(cafe, frequency = 12, start = c(1990,1), end = c(2020,11))
